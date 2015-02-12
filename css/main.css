@@ -1,7 +1,26 @@
+.container-fluid {
+	flex-wrap : wrap;
+	max-width: 880px;
+	width: 100%;
+}
+
 p {
 	font-family: courier;
 }
 
 .col-md-1 {
-	padding: 2px;
+	padding-left: 1px;
+	padding-right: 1px;
+	width: 50px;
+	margin: 2px;
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.project-entry {
+	max-width: 500px;
 }

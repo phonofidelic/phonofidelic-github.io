@@ -13,10 +13,11 @@ var projects = {
 };
 projects.displayThumbs();
 
-// var projectItem = {
-// 	"id":
-// 	"title" :
-// 	"image" : 
-// 	"description":
-// 	"footerNav" : 
+// var projectModal = {
+// 	{
+// 		"id" : "%modalId",
+// 		"header" : "%modalHeader%",
+// 		"image" : "%modalImage%",
+// 		"footer" : "%modalFooter"
+// 	}
 // };
