@@ -1,7 +1,7 @@
 var JSONprojObject = {};
 
 var http_request = new XMLHttpRequest();
-http_request.open("GET", js/ /*jsonURL*/, true);
+http_request.open("GET", 'js/projects.json', true);
 
 http_request.onreadystatechange = function() {
 	var done = 4, ok = 200;
