@@ -1,3 +1,13 @@
+var headerContent = {
+	'text' : 'Phonofidelic is a design project started by Chris Clemons and is dedicated to making quality design for bands, booking agencies and clubs. The main focus is on screen-printed concert posters and flyers, album art, illustrations etc.<br> welcome!<br><div align="right">/Christopher Clemons</div>',
+
+	displayHeaderContent : function() {
+		var formattedHeaderContent = headerContent.text;
+		$("#header-content").append(formattedHeaderContent);
+	}
+};
+headerContent.displayHeaderContent();
+
 var projects = {
 	'thumbs' : ['p1_s', 'p2_s', 'p3_s', 'p4_s', 'p5_s', 'p6_s', 'p7_s', 'p8_s', 'p9_s', 'p10_s', 'p11_s', 'p12_s', 'p13_s', 'p14_s', 'p15_s', 'p16_s'],
 	'modals' : [
