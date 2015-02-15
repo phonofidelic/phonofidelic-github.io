@@ -2,6 +2,9 @@
 	flex-wrap : wrap;
 	max-width: 880px;
 	width: 100%;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 20px;
 }
 
 p {
@@ -22,5 +25,28 @@ p {
 }
 
 .project-entry {
-	max-width: 500px;
+	/*max-width: 500px;*/
+
+}
+
+#header {
+	margin-left: 200px;
+}
+
+#projects {
+	max-width: 450px;
+	margin-left: 220px;
+	/*margin-right: 220px;*/
+}
+
+body {
+	font-family: courier new;
+}
+
+h2 {
+	padding-left: 0px;
+}
+
+.modal-content {
+	border-radius: 0px;
 }
