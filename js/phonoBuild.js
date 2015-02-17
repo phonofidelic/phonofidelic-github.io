@@ -144,7 +144,6 @@ var projects = {
 
 
 			for (modal in projects.modals) {
-				// $("#modals").append(HTMLmodal);
 
 				var formattedModal = HTMLmodal
 				.replace("%modalLink%", projects.modals[modal].link)

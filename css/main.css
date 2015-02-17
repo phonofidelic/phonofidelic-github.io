@@ -1,4 +1,8 @@
-.container-fluid {
+* {
+	border: 1px solid red;
+}
+
+.container {
 	flex-wrap : wrap;
 	max-width: 880px;
 	width: 100%;
@@ -19,24 +23,43 @@ p {
 }
 
 .row {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
+	/*width: 100%;*/
+	/*display: flex;
+	flex-wrap: wrap;*/
 }
 
 .project-entry {
 	/*max-width: 500px;*/
+	padding-left: 0px;
+	padding-right: 0px;
+}
 
+#content {
+	width: 100%;
+}
+
+#logo {
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 #header {
-	margin-left: 200px;
+	padding-left: 0px;
+}
+
+#header-content {
+	margin-left: 0px;
 }
 
 #projects {
 	max-width: 450px;
-	margin-left: 220px;
+	/*margin-left: 220px;*/
 	/*margin-right: 220px;*/
+}
+
+#projects-header {
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 body {
@@ -49,4 +72,7 @@ h2 {
 
 .modal-content {
 	border-radius: 0px;
+}
+
+.thumb:hover {
 }
