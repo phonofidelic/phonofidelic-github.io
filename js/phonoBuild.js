@@ -123,7 +123,7 @@ var projects = {
 		"image" : "images/p16.jpg",
 		"footer" : "%modalFooter%"
 	}
-],
+	],
 
 
 	displayThumbs : function() {
@@ -155,3 +155,19 @@ var projects = {
 };
 projects.displayThumbs();
 projects.appendModals();
+
+var contact = {	
+	"email" :'<a href="mailto:info@phonofidelic.com">Email</a>',
+	"facebook" : '<a href="https://www.facebook.com/phonofidelic" target="blank">Facebook</a>',
+	"blog" : '<a href="http://phonofidelic.tumblr.com" target="blank">tumblr</a>',
+	
+	displayContact : function() {
+		var formattedEmail = contact.email;
+		var formattedFacebook = contact.facebook;
+		var formattedBlog = contact.blog;
+		$("#contact-info").append(formattedEmail);
+		$("#contact-info").append(formattedFacebook);
+		$("#contact-info").append(formattedBlog);		
+	}
+};
+contact.displayContact();

@@ -1,5 +1,5 @@
 * {
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 }
 
 .container {
@@ -46,6 +46,10 @@ p {
 
 #about {
 	padding-left: 0px;
+}
+
+#contact-info {
+	text-align: right;
 }
 
 #content {
