@@ -151,10 +151,17 @@ var projects = {
 				$(".modal-entry").append(formattedModal);
 			}
 		}
+	},
+	projectNav : function() {
+		if (projects.modals[modal].id = '#1') {
+			var formattedNavNext = HTMLprojectNavNext.replace("%nextProj%", projects.modals[modal].link);/*functoin that returns an increment of modalId by 1 based on current modalId)*/
+			$(".modal-footer").append(formattedNavNext);
+		}
 	}
 };
 projects.displayThumbs();
 projects.appendModals();
+projects.projectNav();
 
 var contact = {	
 	"email" :'<a href="mailto:info@phonofidelic.com">Email</a>',

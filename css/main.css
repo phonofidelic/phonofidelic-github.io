@@ -8,6 +8,10 @@
 	width: 100%;
 }
 
+a {
+	
+}
+
 body {
 	margin-left: 50px;
 	margin-right: 50px;
@@ -86,6 +90,14 @@ body {
 
 h2 {
 	padding-left: 0px;
+}
+
+.glyphicon-circle-arrow-right {
+	margin-left: 20px;
+}
+
+.glyphicon-circle-arrow-left {
+	text-align: left; 
 }
 
 .modal-content {
