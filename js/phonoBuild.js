@@ -14,7 +14,7 @@ var projects = {
 	{
 		"id" : "#p1",
 		"link" : "p1",
-		"header" : "%modalHeader%",
+		"header" : "Vetet 4",
 		"image" : "images/p1.jpg",
 		"footer" : "%modalFooter%"
 	},
@@ -152,6 +152,14 @@ var projects = {
 			}
 		}
 	},
+
+	displayTitle : function() {
+		// $(".modal-title").append('Vetet 4');
+
+		var formattedModalTitle = HTMLmodal.replace("%modalTitle%", "Vetet 4");
+		$(".modal-title").append(formattedModalTitle);
+	},
+
 	projectNav : function() {
 
 		$(".modal-footer").append(HTMLprojectNav);
@@ -167,7 +175,9 @@ var projects = {
 };
 projects.displayThumbs();
 projects.appendModals();
+projects.displayTitle();
 projects.projectNav();
+
 
 var contact = {	
 	"email" :'<h3><p><a href="mailto:info@phonofidelic.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</a></p>',
