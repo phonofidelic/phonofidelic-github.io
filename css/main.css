@@ -9,7 +9,7 @@
 }
 
 a {
-	
+
 }
 
 body {
@@ -46,6 +46,9 @@ p {
 .thumb {
 	width: 50px;
 	height: 50px;
+}
+
+.thumb:hover {
 }
 
 #about {
@@ -97,12 +100,10 @@ h2 {
 }
 
 .glyphicon-circle-arrow-left {
-	text-align: left; 
+	text-align: left;
 }
 
 .modal-content {
 	border-radius: 0px;
 }
 
-.thumb:hover {
-}
