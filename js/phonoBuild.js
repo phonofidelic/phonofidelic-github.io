@@ -163,14 +163,14 @@ var projects = {
 	projectNav : function() {
 
 		$(".modal-footer").append(HTMLprojectNav);
-	
+
 		/*var formattedNavNext = HTMLprojectNavNext.replace("%nextProj%", projects.modals[modal].link);functoin that returns an increment of modalId by 1 based on current modalId)
 		$(".modal-footer").append(formattedNavNext);*/
 
 		/*for (modal in projects.modals) {
 			$(".glyphicon-circle-arrow-right").append('<a href="' + projects.modals[modal].link) + '"></a>';
-		}	*/		
-		
+		}	*/
+
 	}
 };
 projects.displayThumbs();
@@ -179,18 +179,18 @@ projects.displayTitle();
 projects.projectNav();
 
 
-var contact = {	
+var contact = {
 	"email" :'<h3><p><a href="mailto:info@phonofidelic.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</a></p>',
 	"facebook" : '<h3><p><a href="https://www.facebook.com/phonofidelic" target="blank"><span class="social social-facebook"></span> Facebook</a></p>',
 	"blog" : '<h3><p><a href="http://phonofidelic.tumblr.com" target="blank">tumblr</a></p></h3>',
-	
+
 	displayContact : function() {
 		var formattedEmail = contact.email;
 		var formattedFacebook = contact.facebook;
 		var formattedBlog = contact.blog;
 		$("#contact-info").append(formattedEmail);
 		$("#contact-info").append(formattedFacebook);
-		$("#contact-info").append(formattedBlog);		
+		$("#contact-info").append(formattedBlog);
 	}
 };
 contact.displayContact();
