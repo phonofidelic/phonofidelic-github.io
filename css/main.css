@@ -130,8 +130,10 @@ h2 {
 @media (min-width: 2100px) {
 	body {
 		background-color: green;
+		margin-right: 0px;
 	}
 	.container {
 		text-align: right;
+		margin-right: 0px;
 	}
 }
