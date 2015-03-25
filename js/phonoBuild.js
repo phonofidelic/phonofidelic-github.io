@@ -1,5 +1,5 @@
 var headerContent = {
-	'text' : 'Phonofidelic is a design project started by Chris Clemons and is dedicated to making quality design for bands, booking agencies and clubs. The main focus is on screen-printed concert posters and flyers, album art, illustrations etc.<br> welcome!<br><div align="right">/Christopher Clemons</div>',
+	'text' : '<p>Phonofidelic is a design project started by Chris Clemons and is dedicated to making quality design for bands, booking agencies and clubs. The main focus is on screen-printed concert posters and flyers, album art, illustrations etc.<br> welcome!<br><div align="right"><p>/Christopher Clemons</p></div>',
 
 	displayHeaderContent : function() {
 		var formattedHeaderContent = headerContent.text;
@@ -21,105 +21,105 @@ var projects = {
 	{
 		"id" : "#p2",
 		"link" : "p2",
-		"header" : "%modalHeader%",
+		"header" : "Kilroy",
 		"image" : "images/p2.jpg",
 		"footer" : "%modalFooter%"
 	},
 	{
 		"id" : "#p3",
 		"link" : "p3",
-		"header" : "%modalHeader%",
+		"header" : "The Vanjas",
 		"image" : "images/p3.jpg",
 		"footer" : "%modalFooter%"
 	},
 	{
 		"id" : "#p4",
 		"link" : "p4",
-		"header" : "%modalHeader%",
+		"header" : "Scrags",
 		"image" : "images/p4.jpg",
 		"footer" : "%modalFooter%"
 	},
 	{
 		"id" : "#p5",
 		"link" : "p5",
-		"header" : "%modalHeader%",
+		"header" : "Poster",
 		"image" : "images/p5.jpg",
 		"footer" : "%modalFooter%"
 	},
 	{
 		"id" : "#p6",
 		"link" : "p6",
-		"header" : "%modalHeader%",
+		"header" : "Poster",
 		"image" : "images/p6.jpg",
 		"footer" : "%modalFooter%"
 	},
 	{
 		"id" : "#p7",
 		"link" : "p7",
-		"header" : "%modalHeader%",
+		"header" : "Poster",
 		"image" : "images/p7.jpg",
 		"footer" : "%modalFooter%"
 	},
 	{
 		"id" : "#p8",
 		"link" : "p8",
-		"header" : "%modalHeader%",
+		"header" : "Poster",
 		"image" : "images/p8.jpg",
 		"footer" : "%modalFooter%"
 	},
 	{
 		"id" : "#p9",
 		"link" : "p9",
-		"header" : "%modalHeader%",
+		"header" : "Poster",
 		"image" : "images/p9.jpg",
 		"footer" : "%modalFooter%"
 	},
 	{
 		"id" : "#p10",
 		"link" : "p10",
-		"header" : "%modalHeader%",
+		"header" : "Poster",
 		"image" : "images/p10.jpg",
 		"footer" : "%modalFooter%"
 	},
 	{
 		"id" : "#p11",
 		"link" : "p11",
-		"header" : "%modalHeader%",
+		"header" : "Dovolution",
 		"image" : "images/p11.jpg",
 		"footer" : "%modalFooter%"
 	},
 	{
 		"id" : "#p12",
 		"link" : "p12",
-		"header" : "%modalHeader%",
+		"header" : "Poster",
 		"image" : "images/p12.jpg",
 		"footer" : "%modalFooter%"
 	},
 	{
 		"id" : "#p13",
 		"link" : "p13",
-		"header" : "%modalHeader%",
+		"header" : "Poster",
 		"image" : "images/p13.jpg",
 		"footer" : "%modalFooter%"
 	},
 	{
 		"id" : "#p14",
 		"link" : "p14",
-		"header" : "%modalHeader%",
+		"header" : "Poster",
 		"image" : "images/p14.jpg",
 		"footer" : "%modalFooter%"
 	},
 	{
 		"id" : "#p15",
 		"link" : "p15",
-		"header" : "%modalHeader%",
+		"header" : "Poster",
 		"image" : "images/p15.jpg",
 		"footer" : "%modalFooter%"
 	},
 	{
 		"id" : "#p16",
 		"link" : "p16",
-		"header" : "%modalHeader%",
+		"header" : "Poster",
 		"image" : "images/p16.jpg",
 		"footer" : "%modalFooter%"
 	}
@@ -134,7 +134,7 @@ var projects = {
 			var formattedThumb = HTMLprojectThumb
 			.replace("%modalImage%", projects.thumbs[thumb])
 			.replace("%modalId%", projects.modals[thumb].id);
-			$(".project-entry").append(formattedThumb);
+			$(".entry-block").append(formattedThumb);
 		}
 	},
 	appendModals : function() {
@@ -147,50 +147,24 @@ var projects = {
 
 				var formattedModal = HTMLmodal
 				.replace("%modalLink%", projects.modals[modal].link)
-				.replace("%modalImage%", projects.modals[modal].image);
+				.replace("%modalImage%", projects.modals[modal].image)
+				.replace("%modalTitle%", projects.modals[modal].header);
 				$(".modal-entry").append(formattedModal);
 			}
 		}
-	},
-
-	displayTitle : function() {
-		// $(".modal-title").append('Vetet 4');
-
-		var formattedModalTitle = HTMLmodal.replace("%modalTitle%", "Vetet 4");
-		$(".modal-title").append(formattedModalTitle);
-	},
-
-	projectNav : function() {
-
-		$(".modal-footer").append(HTMLprojectNav);
-
-		/*var formattedNavNext = HTMLprojectNavNext.replace("%nextProj%", projects.modals[modal].link);functoin that returns an increment of modalId by 1 based on current modalId)
-		$(".modal-footer").append(formattedNavNext);*/
-
-		/*for (modal in projects.modals) {
-			$(".glyphicon-circle-arrow-right").append('<a href="' + projects.modals[modal].link) + '"></a>';
-		}	*/
-
 	}
 };
 projects.displayThumbs();
 projects.appendModals();
-projects.displayTitle();
-projects.projectNav();
-
 
 var contact = {
-	"email" :'<h3><p><a href="mailto:info@phonofidelic.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</a></p>',
-	"facebook" : '<h3><p><a href="https://www.facebook.com/phonofidelic" target="blank"><span class="social social-facebook"></span> Facebook</a></p>',
-	"blog" : '<h3><p><a href="http://phonofidelic.tumblr.com" target="blank">tumblr</a></p></h3>',
-
 	displayContact : function() {
-		var formattedEmail = contact.email;
-		var formattedFacebook = contact.facebook;
-		var formattedBlog = contact.blog;
-		$("#contact-info").append(formattedEmail);
-		$("#contact-info").append(formattedFacebook);
-		$("#contact-info").append(formattedBlog);
+		$("#contact-info").append(
+		'<p><a href="mailto:info@phonofidelic.com" title="email"><span class="icon-social-email icon"></span></a></p>',
+		'<p><a href="https://www.facebook.com/phonofidelic" title="facebook" target="blank"><span class="icon-social-facebook icon"></span></a></p>',
+		'<p><a href="http://www.phonofidelic.tumblr.com/" title="tumblr" target="blank"><span class="icon-social-tumblr icon"></span></a></p>',
+		'<p><a href="https://github.com/phonofidelic" title="GitHub" target="blank"><span class="icon-social-github icon"></span></a></p>'
+		);
 	}
 };
 contact.displayContact();

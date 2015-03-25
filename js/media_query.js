@@ -8,12 +8,13 @@
 // }
 
 
-var mq = window.matchMedia('@media all and (max-width: 2400px)');
+var mq = window.matchMedia('@media all and (max-width: 750px)');
 if(mq.matches) {
     // the width of browser is more then 2400px
-    console.log(test);
+    console.log('more');
 } else {
     // the width of browser is less then 2400px
+    console.log('less');
 }
 
 mq.addListener(function(changed) {
