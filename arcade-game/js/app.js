@@ -1,26 +1,12 @@
-//** random number generator **
+//random number generator
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min));
 }
-//** global variables **
+//global variables
 var yPos = [150, 235, 320];
 var speeds = [50, 300, 500];
 var suspGame = false;
 var timeoutId;
-
-// // delay player respawn when killed
-// function delayReset() {
-//     timeoutId = window.setTimeout(playerReset, 2000);
-// }
-
-// // reset player position and resume gameplay
-// function playerReset() {
-//     player.x = 202;
-//     player.y = 465;
-//     player.sprite = 'images/enemy-bug-small.png';
-//     suspGame = false;
-
-// }
 
 // Enemies our player must avoid
 var Enemy = function () {
@@ -135,9 +121,6 @@ Enemy3.prototype.render = function () {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
-
-
-
 // Now write your own player class}
 // This class requires an update(), render() and
 // a handleInput() method.
@@ -151,12 +134,6 @@ var Player = function () {
 
 Player.prototype.update = function () {
     this.checkCollisions();
-    // if (this.y === 50) {
-    //     this.x = 202;
-    //     this.y = 465;
-
-    //     console.log('test');
-    // }
 };
 
 Player.prototype.render = function () {
@@ -165,27 +142,20 @@ Player.prototype.render = function () {
 
 // kills player and susppends gameplay if collision is detected
 Player.prototype.checkCollisions = function () {
-    for (enemy in allEnemies) {
-        if (Math.abs(this.x - allEnemies[enemy].x) <= 20 && Math.abs(this.y - allEnemies[enemy].y) <= 40 && suspGame === false) {
-            this.sprite = this.spriteDead;
-            suspGame = true;
-            delayReset();
-        }
-        if (this.y === 50) {
-            player.x = 202;
-            player.y = 465;
+    if (suspGame === false) {
+        for (var enemy in allEnemies) {
+            if (Math.abs(this.x - allEnemies[enemy].x) <= 20 && Math.abs(this.y - allEnemies[enemy].y) <= 40 && suspGame === false) {
+                this.sprite = this.spriteDead;
+                suspGame = true;
+                delayReset();
+            }
+            if (this.y === 50) {
+                player.x = 202;
+                player.y = 465;
+            }
         }
     }
 };
-
-// Player.prototype.reachGrass = function () {
-//     if (this.y < 150) {
-//         this.x = 202;
-//         this.y = 465;
-
-//         console.log('test');
-//     }
-// };
 
 Player.prototype.handleInput = function (movement) {
     if (suspGame === false) {
@@ -226,7 +196,6 @@ function playerReset () {
 // Place the player object in a variable called player
 var allEnemies = [];
 
-
 var enemy = new Enemy();
 allEnemies.push(enemy);
 
@@ -236,10 +205,7 @@ allEnemies.push(enemy2);
 var enemy3 = new Enemy3();
 allEnemies.push(enemy3);
 
-
 var player = new Player();
-
-
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
