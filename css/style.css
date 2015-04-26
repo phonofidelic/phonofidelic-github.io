@@ -1,15 +1,41 @@
 * {
-	border: solid red 1px;
+	/*border: solid red 1px;*/
 }
 
-.header {
+body{
+	font-family: "Open Sans";
+}
+
+.sub-header {
 	text-align: center;
 }
 
-.left-col .center-col .right-col {
-
+.left-col,
+.center-col,
+.right-col {
+	padding: 0px 50px 0px 50px;
 }
 
 .footer {
 
 }
+
+
+.welcome-bg {
+	text-align: center;
+	height: 100vh;
+	background: url("../images/winter.jpg");
+}
+
+.welcome h1 {
+	color: white;
+	text-align: right;
+	letter-spacing: 0.5em;
+}
+
+}
+
+/*.container {
+	height: 100vh;
+	background: white;
+}*/
