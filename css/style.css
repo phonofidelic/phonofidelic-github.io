@@ -10,10 +10,9 @@ body{
 	text-align: center;
 }
 
-.left-col,
-.center-col,
-.right-col {
+.content {
 	padding: 0px 50px 0px 50px;
+
 }
 
 .footer {
@@ -33,9 +32,27 @@ body{
 	letter-spacing: 0.5em;
 }
 
-}
 
 /*.container {
 	height: 100vh;
 	background: white;
 }*/
+
+#left-col {
+
+}
+#center-col {
+
+}
+#right-col {
+
+}
+
+#projects {
+	/*margin: 0px;*/
+}
+
+.project {
+	width: 50px;
+	margin: 2px;
+}
