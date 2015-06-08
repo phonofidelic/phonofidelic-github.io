@@ -102,7 +102,7 @@ var projectMaker = function() {
 		imgElem = document.createElement('img');
 
 		//set project div atributes
-		projElem.setAttribute('class', 'col-md-1 project')
+		projElem.setAttribute('class', 'col-xs-1 col-sm-1 col-md-1 project')
 
 		//set project id
 		projElem.setAttribute('id', id);
